@@ -1,0 +1,3813 @@
+[
+    {
+      "id": 1,
+      "name": "Chicken Biryani",
+      "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 45,
+      "calories": 450,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "ginger",
+          "weight": "50g"
+        },
+        {
+          "name": "yogurt",
+          "weight": "100g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Marinate chicken with yogurt and spices. Use medium heat and stir gently for even cooking.",
+        "Fry onions until golden. Use medium heat and stir gently for even cooking.",
+        "Add chicken and cook well. Use medium heat and stir gently for even cooking.",
+        "Add rice and water. Use medium heat and stir gently for even cooking.",
+        "Cook until rice is done. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 2,
+      "name": "Veggie Omelette",
+      "image": "https://plus.unsplash.com/premium_photo-1689596510437-aed4adfd125e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 15,
+      "calories": 220,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "eggs",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "bell pepper",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        },
+        {
+          "name": "pepper",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Beat eggs with salt and pepper. Use medium heat and stir gently for even cooking.",
+        "Add chopped vegetables. Use medium heat and stir gently for even cooking.",
+        "Pour into hot pan. Use medium heat and stir gently for even cooking.",
+        "Cook until set. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 3,
+      "name": "Paneer Butter Masala",
+      "image": "https://images.unsplash.com/photo-1701579231378-3726490a407b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 30,
+      "calories": 380,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "paneer",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "cream",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare tomato gravy. Use medium heat and stir gently for even cooking.",
+        "Add butter and spices. Use medium heat and stir gently for even cooking.",
+        "Add paneer cubes. Use medium heat and stir gently for even cooking.",
+        "Finish with cream. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 4,
+      "name": "Garlic Pasta",
+      "image": "https://images.unsplash.com/photo-1552056776-9b5657118ca4?q=80&w=778&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 20,
+      "calories": 300,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "pasta",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "olive oil",
+          "weight": "50g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil pasta. Use medium heat and stir gently for even cooking.",
+        "Saut\u00e9 garlic in olive oil. Use medium heat and stir gently for even cooking.",
+        "Mix pasta with sauce. Use medium heat and stir gently for even cooking.",
+        "Top with cheese. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 5,
+      "name": "Potato Stir Fry",
+      "image": "https://plus.unsplash.com/premium_photo-1669261881158-ffa358fc2d3d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 25,
+      "calories": 260,
+      "rating": 4.2,
+      "ingredients": [
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "chili",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil potatoes lightly. Use medium heat and stir gently for even cooking.",
+        "Stir fry onions and garlic. Use medium heat and stir gently for even cooking.",
+        "Add potatoes and spices. Use medium heat and stir gently for even cooking.",
+        "Cook until crispy. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 6,
+      "name": "Egg Fried Rice",
+      "image": "https://images.unsplash.com/photo-1687020836451-41977907509e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 20,
+      "calories": 320,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "eggs",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Heat oil in a pan. Use medium heat and stir gently for even cooking.",
+        "Scramble eggs and set aside. Use medium heat and stir gently for even cooking.",
+        "Saut\u00e9 onion and garlic. Use medium heat and stir gently for even cooking.",
+        "Add rice and soy sauce. Use medium heat and stir gently for even cooking.",
+        "Mix eggs and stir well. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 7,
+      "name": "Tomato Garlic Soup",
+      "image": "https://images.unsplash.com/photo-1730312382513-62e9454f4797?q=80&w=1602&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 25,
+      "calories": 180,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        },
+        {
+          "name": "pepper",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook tomatoes with garlic and onion. Use medium heat and stir gently for even cooking.",
+        "Blend until smooth. Use medium heat and stir gently for even cooking.",
+        "Heat with butter. Use medium heat and stir gently for even cooking.",
+        "Season and serve hot. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 8,
+      "name": "Chicken Stir Fry",
+      "image": "https://images.unsplash.com/photo-1621515554656-3da68ba128b1?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 25,
+      "calories": 360,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "bell pepper",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Heat oil in pan. Use medium heat and stir gently for even cooking.",
+        "Cook chicken until golden. Use medium heat and stir gently for even cooking.",
+        "Add vegetables. Use medium heat and stir gently for even cooking.",
+        "Add soy sauce. Use medium heat and stir gently for even cooking.",
+        "Stir fry until cooked. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 9,
+      "name": "Vegetable Sandwich",
+      "image": "https://plus.unsplash.com/premium_photo-1701889905370-86796636710a?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 10,
+      "calories": 240,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "cucumber",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Butter the bread. Use medium heat and stir gently for even cooking.",
+        "Add sliced vegetables. Use medium heat and stir gently for even cooking.",
+        "Season lightly. Use medium heat and stir gently for even cooking.",
+        "Grill or serve fresh. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast",
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 10,
+      "name": "Potato Curry",
+      "image": "https://images.unsplash.com/photo-1652545296893-ff9227b3512e?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "time_minutes": 30,
+      "calories": 280,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Saut\u00e9 onion and garlic. Use medium heat and stir gently for even cooking.",
+        "Add tomatoes and spices. Use medium heat and stir gently for even cooking.",
+        "Add potatoes. Use medium heat and stir gently for even cooking.",
+        "Cook until soft. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 11,
+      "name": "Cheese Omelette",
+      "image": "https://images.pexels.com/photos/5639284/pexels-photo-5639284.jpeg",
+      "time_minutes": 10,
+      "calories": 260,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "eggs",
+          "weight": "50g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        },
+        {
+          "name": "pepper",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Beat eggs with seasoning. Use medium heat and stir gently for even cooking.",
+        "Pour into pan. Use medium heat and stir gently for even cooking.",
+        "Add cheese. Use medium heat and stir gently for even cooking.",
+        "Fold and cook. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 12,
+      "name": "Mushroom Fry",
+      "image": "",
+      "time_minutes": 20,
+      "calories": 210,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "mushroom",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Heat oil. Use medium heat and stir gently for even cooking.",
+        "Saut\u00e9 onion and garlic. Use medium heat and stir gently for even cooking.",
+        "Add mushrooms. Use medium heat and stir gently for even cooking.",
+        "Cook until golden. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 13,
+      "name": "Simple Chicken Curry",
+      "image": "",
+      "time_minutes": 40,
+      "calories": 420,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook onion and garlic. Use medium heat and stir gently for even cooking.",
+        "Add chicken and spices. Use medium heat and stir gently for even cooking.",
+        "Add tomatoes. Use medium heat and stir gently for even cooking.",
+        "Simmer until cooked. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 14,
+      "name": "Vegetable Pasta",
+      "image": "",
+      "time_minutes": 25,
+      "calories": 340,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "pasta",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "bell pepper",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "olive oil",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil pasta. Use medium heat and stir gently for even cooking.",
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Add sauce. Use medium heat and stir gently for even cooking.",
+        "Mix pasta and serve. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 15,
+      "name": "Rice & Lentils (Dal Rice)",
+      "image": "",
+      "time_minutes": 35,
+      "calories": 310,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "lentils",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook lentils with spices. Use medium heat and stir gently for even cooking.",
+        "Prepare rice. Use medium heat and stir gently for even cooking.",
+        "Mix and simmer. Use medium heat and stir gently for even cooking.",
+        "Serve hot. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 16,
+      "name": "Garlic Butter Rice",
+      "image": "https://images.pexels.com/photos/34117379/pexels-photo-34117379.jpeg",
+      "time_minutes": 15,
+      "calories": 290,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook rice. Use medium heat and stir gently for even cooking.",
+        "Saut\u00e9 garlic in butter. Use medium heat and stir gently for even cooking.",
+        "Mix rice with garlic butter. Use medium heat and stir gently for even cooking.",
+        "Serve hot. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 17,
+      "name": "Egg Curry",
+      "image": "https://images.pexels.com/photos/34117379/pexels-photo-34117379.jpeg",
+      "time_minutes": 30,
+      "calories": 350,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "eggs",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil eggs. Use medium heat and stir gently for even cooking.",
+        "Prepare onion-tomato gravy. Use medium heat and stir gently for even cooking.",
+        "Add spices. Use medium heat and stir gently for even cooking.",
+        "Add eggs and simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 18,
+      "name": "Vegetable Fried Rice",
+      "image": "https://images.pexels.com/photos/34117379/pexels-photo-34117379.jpeg",
+      "time_minutes": 20,
+      "calories": 300,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "beans",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook rice. Use medium heat and stir gently for even cooking.",
+        "Stir fry vegetables. Use medium heat and stir gently for even cooking.",
+        "Add rice and soy sauce. Use medium heat and stir gently for even cooking.",
+        "Mix well and serve. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 19,
+      "name": "Masala Toast",
+      "image": "https://images.pexels.com/photos/34117379/pexels-photo-34117379.jpeg",
+      "time_minutes": 10,
+      "calories": 230,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Mix vegetables with spices. Use medium heat and stir gently for even cooking.",
+        "Spread on bread. Use medium heat and stir gently for even cooking.",
+        "Toast with butter. Use medium heat and stir gently for even cooking.",
+        "Serve hot. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast",
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 20,
+      "name": "Chicken Sandwich",
+      "image": "https://images.pexels.com/photos/34117379/pexels-photo-34117379.jpeg",
+      "time_minutes": 15,
+      "calories": 360,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "lettuce",
+          "weight": "50g"
+        },
+        {
+          "name": "mayonnaise",
+          "weight": "50g"
+        },
+        {
+          "name": "pepper",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Slice bread. Use medium heat and stir gently for even cooking.",
+        "Assemble ingredients. Use medium heat and stir gently for even cooking.",
+        "Serve fresh. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack",
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 21,
+      "name": "Creamy Mushroom Pasta",
+      "image": "https://images.pexels.com/photos/34117379/pexels-photo-34117379.jpeg",
+      "time_minutes": 25,
+      "calories": 370,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "pasta",
+          "weight": "50g"
+        },
+        {
+          "name": "mushroom",
+          "weight": "50g"
+        },
+        {
+          "name": "cream",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil pasta. Use medium heat and stir gently for even cooking.",
+        "Cook mushrooms with garlic. Use medium heat and stir gently for even cooking.",
+        "Add cream and butter. Use medium heat and stir gently for even cooking.",
+        "Mix pasta and sauce. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 22,
+      "name": "Spicy Potato Fry",
+      "image": "https://images.pexels.com/photos/34117379/pexels-photo-34117379.jpeg",
+      "time_minutes": 20,
+      "calories": 270,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "chili",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil potatoes lightly. Use medium heat and stir gently for even cooking.",
+        "Fry garlic and chili. Use medium heat and stir gently for even cooking.",
+        "Add potatoes. Use medium heat and stir gently for even cooking.",
+        "Cook until crispy. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 23,
+      "name": "Chicken Noodles",
+      "image": "https://example.com/images/chicken_noodles.jpg",
+      "time_minutes": 25,
+      "calories": 390,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "noodles",
+          "weight": "50g"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil noodles. Use medium heat and stir gently for even cooking.",
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Add vegetables and sauce. Use medium heat and stir gently for even cooking.",
+        "Mix noodles and stir fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 24,
+      "name": "Vegetable Soup",
+      "image": "https://example.com/images/vegetable_soup.jpg",
+      "time_minutes": 30,
+      "calories": 160,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "beans",
+          "weight": "50g"
+        },
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Chop vegetables. Use medium heat and stir gently for even cooking.",
+        "Boil with water. Use medium heat and stir gently for even cooking.",
+        "Season lightly. Use medium heat and stir gently for even cooking.",
+        "Serve warm. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 25,
+      "name": "Banana Pancakes",
+      "image": "https://example.com/images/banana_pancakes.jpg",
+      "time_minutes": 15,
+      "calories": 280,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "banana",
+          "weight": "50g"
+        },
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "milk",
+          "weight": "200ml"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Mash bananas. Use medium heat and stir gently for even cooking.",
+        "Mix batter. Use medium heat and stir gently for even cooking.",
+        "Cook on pan. Use medium heat and stir gently for even cooking.",
+        "Serve with honey. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 26,
+      "name": "Cheese Omelette",
+      "image": "https://example.com/images/cheese_omelette.jpg",
+      "time_minutes": 10,
+      "calories": 260,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "eggs",
+          "weight": "50g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        },
+        {
+          "name": "pepper",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Beat eggs. Use medium heat and stir gently for even cooking.",
+        "Cook in butter. Use medium heat and stir gently for even cooking.",
+        "Add cheese. Use medium heat and stir gently for even cooking.",
+        "Fold and serve. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 27,
+      "name": "Vegetable Roti Wrap",
+      "image": "https://example.com/images/veg_roti_wrap.jpg",
+      "time_minutes": 20,
+      "calories": 310,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "roti",
+          "weight": "50g"
+        },
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "cabbage",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Warm roti. Use medium heat and stir gently for even cooking.",
+        "Fill and roll. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 28,
+      "name": "Chicken Stir Fry",
+      "image": "https://example.com/images/chicken_stir_fry.jpg",
+      "time_minutes": 25,
+      "calories": 420,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "bell pepper",
+          "weight": "50g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Add vegetables. Use medium heat and stir gently for even cooking.",
+        "Stir fry with sauce. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 29,
+      "name": "Tomato Cheese Pasta",
+      "image": "https://example.com/images/tomato_cheese_pasta.jpg",
+      "time_minutes": 25,
+      "calories": 360,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "pasta",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "olive oil",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil pasta. Use medium heat and stir gently for even cooking.",
+        "Prepare sauce. Use medium heat and stir gently for even cooking.",
+        "Mix with cheese. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 30,
+      "name": "Spicy Chickpea Curry",
+      "image": "https://example.com/images/chickpea_curry.jpg",
+      "time_minutes": 30,
+      "calories": 330,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chickpeas",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook onion. Use medium heat and stir gently for even cooking.",
+        "Add spices. Use medium heat and stir gently for even cooking.",
+        "Add chickpeas. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 31,
+      "name": "French Toast",
+      "image": "https://example.com/images/french_toast.jpg",
+      "time_minutes": 15,
+      "calories": 290,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "milk",
+          "weight": "200ml"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "sugar",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Mix egg and milk. Use medium heat and stir gently for even cooking.",
+        "Dip bread. Use medium heat and stir gently for even cooking.",
+        "Fry in butter. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 32,
+      "name": "Tuna Salad",
+      "image": "https://example.com/images/tuna_salad.jpg",
+      "time_minutes": 10,
+      "calories": 220,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "tuna",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "lettuce",
+          "weight": "50g"
+        },
+        {
+          "name": "lemon",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Mix ingredients. Use medium heat and stir gently for even cooking.",
+        "Season. Use medium heat and stir gently for even cooking.",
+        "Serve fresh. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 33,
+      "name": "Vegetable Kottu",
+      "image": "https://example.com/images/veg_kottu.jpg",
+      "time_minutes": 30,
+      "calories": 450,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "roti",
+          "weight": "50g"
+        },
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "cabbage",
+          "weight": "50g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Chop roti. Use medium heat and stir gently for even cooking.",
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Mix and stir fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 34,
+      "name": "Garlic Bread",
+      "image": "https://example.com/images/garlic_bread.jpg",
+      "time_minutes": 10,
+      "calories": 240,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "parsley",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Mix garlic butter. Use medium heat and stir gently for even cooking.",
+        "Spread on bread. Use medium heat and stir gently for even cooking.",
+        "Toast. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 35,
+      "name": "Chicken Fried Rice",
+      "image": "https://example.com/images/chicken_fried_rice.jpg",
+      "time_minutes": 25,
+      "calories": 430,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook rice. Use medium heat and stir gently for even cooking.",
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Mix and stir fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 36,
+      "name": "Vegetable Sandwich",
+      "image": "https://example.com/images/veg_sandwich.jpg",
+      "time_minutes": 10,
+      "calories": 210,
+      "rating": 4.2,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "cucumber",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Slice vegetables. Use medium heat and stir gently for even cooking.",
+        "Assemble sandwich. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack",
+        "Breakfast"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 37,
+      "name": "Boiled Corn with Butter",
+      "image": "https://example.com/images/boiled_corn.jpg",
+      "time_minutes": 10,
+      "calories": 180,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "corn",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil corn. Use medium heat and stir gently for even cooking.",
+        "Add butter and salt. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 38,
+      "name": "Fish Ambul Thiyal",
+      "image": "https://example.com/images/fish_ambul_thiyal.jpg",
+      "time_minutes": 40,
+      "calories": 320,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "fish",
+          "weight": "200g"
+        },
+        {
+          "name": "goraka",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "pepper",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Season fish. Use medium heat and stir gently for even cooking.",
+        "Cook slowly. Use medium heat and stir gently for even cooking.",
+        "Reduce gravy. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 39,
+      "name": "Lentil Soup",
+      "image": "https://example.com/images/lentil_soup.jpg",
+      "time_minutes": 30,
+      "calories": 200,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "lentils",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil lentils. Use medium heat and stir gently for even cooking.",
+        "Add seasoning. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 40,
+      "name": "Chicken Sausage Pasta",
+      "image": "https://example.com/images/sausage_pasta.jpg",
+      "time_minutes": 25,
+      "calories": 410,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "pasta",
+          "weight": "50g"
+        },
+        {
+          "name": "chicken sausage",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil pasta. Use medium heat and stir gently for even cooking.",
+        "Cook sausage. Use medium heat and stir gently for even cooking.",
+        "Mix sauce. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 41,
+      "name": "Fruit Salad",
+      "image": "https://example.com/images/fruit_salad.jpg",
+      "time_minutes": 10,
+      "calories": 150,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "apple",
+          "weight": "50g"
+        },
+        {
+          "name": "banana",
+          "weight": "50g"
+        },
+        {
+          "name": "orange",
+          "weight": "50g"
+        },
+        {
+          "name": "grapes",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Chop fruits. Use medium heat and stir gently for even cooking.",
+        "Mix and serve. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast",
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 42,
+      "name": "Potato Omelette",
+      "image": "https://example.com/images/potato_omelette.jpg",
+      "time_minutes": 15,
+      "calories": 320,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook potato. Use medium heat and stir gently for even cooking.",
+        "Add egg. Use medium heat and stir gently for even cooking.",
+        "Fry omelette. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 43,
+      "name": "Vegetable Curry",
+      "image": "https://example.com/images/veg_curry.jpg",
+      "time_minutes": 35,
+      "calories": 280,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "mixed vegetables",
+          "weight": "50g"
+        },
+        {
+          "name": "coconut milk",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Add coconut milk. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 44,
+      "name": "Chicken Soup",
+      "image": "https://example.com/images/chicken_soup.jpg",
+      "time_minutes": 35,
+      "calories": 250,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil chicken. Use medium heat and stir gently for even cooking.",
+        "Add vegetables. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 45,
+      "name": "Chocolate Mug Cake",
+      "image": "https://example.com/images/choco_mug_cake.jpg",
+      "time_minutes": 5,
+      "calories": 340,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "cocoa",
+          "weight": "50g"
+        },
+        {
+          "name": "sugar",
+          "weight": "50g"
+        },
+        {
+          "name": "milk",
+          "weight": "200ml"
+        }
+      ],
+      "steps": [
+        "Mix ingredients. Use medium heat and stir gently for even cooking.",
+        "Microwave. Use medium heat and stir gently for even cooking.",
+        "Serve warm. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dessert"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 46,
+      "name": "Sri Lankan Parippu Curry",
+      "image": "https://example.com/images/parippu.jpg",
+      "time_minutes": 25,
+      "calories": 260,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "lentils",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "coconut milk",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil lentils. Use medium heat and stir gently for even cooking.",
+        "Add spices. Use medium heat and stir gently for even cooking.",
+        "Add coconut milk. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 47,
+      "name": "Pol Sambol",
+      "image": "https://example.com/images/pol_sambol.jpg",
+      "time_minutes": 10,
+      "calories": 180,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "coconut",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "chili",
+          "weight": "50g"
+        },
+        {
+          "name": "lime",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Mix all ingredients. Use medium heat and stir gently for even cooking.",
+        "Grind lightly. Use medium heat and stir gently for even cooking.",
+        "Serve fresh. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Side Dish"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 48,
+      "name": "Chicken Devilled",
+      "image": "https://example.com/images/chicken_devilled.jpg",
+      "time_minutes": 30,
+      "calories": 420,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "capsicum",
+          "weight": "50g"
+        },
+        {
+          "name": "chili sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Fry chicken. Use medium heat and stir gently for even cooking.",
+        "Add vegetables. Use medium heat and stir gently for even cooking.",
+        "Add sauce. Use medium heat and stir gently for even cooking.",
+        "Stir fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 49,
+      "name": "Vegetable Hoppers",
+      "image": "https://example.com/images/veg_hoppers.jpg",
+      "time_minutes": 20,
+      "calories": 220,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "hopper batter",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare batter. Use medium heat and stir gently for even cooking.",
+        "Add vegetables. Use medium heat and stir gently for even cooking.",
+        "Cook hoppers. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 50,
+      "name": "Chicken Shawarma Wrap",
+      "image": "https://example.com/images/shawarma.jpg",
+      "time_minutes": 20,
+      "calories": 390,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "flatbread",
+          "weight": "50g"
+        },
+        {
+          "name": "lettuce",
+          "weight": "50g"
+        },
+        {
+          "name": "sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Warm bread. Use medium heat and stir gently for even cooking.",
+        "Assemble wrap. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 51,
+      "name": "Avocado Toast",
+      "image": "https://example.com/images/avocado_toast.jpg",
+      "time_minutes": 10,
+      "calories": 250,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "avocado",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        },
+        {
+          "name": "pepper",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Toast bread. Use medium heat and stir gently for even cooking.",
+        "Mash avocado. Use medium heat and stir gently for even cooking.",
+        "Spread and season. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 52,
+      "name": "Chicken Wrap",
+      "image": "https://example.com/images/chicken_wrap.jpg",
+      "time_minutes": 15,
+      "calories": 360,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "roti",
+          "weight": "50g"
+        },
+        {
+          "name": "lettuce",
+          "weight": "50g"
+        },
+        {
+          "name": "sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Fill roti. Use medium heat and stir gently for even cooking.",
+        "Wrap tightly. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack",
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 53,
+      "name": "Vegetable Omelette",
+      "image": "https://example.com/images/veg_omelette.jpg",
+      "time_minutes": 10,
+      "calories": 240,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Beat eggs. Use medium heat and stir gently for even cooking.",
+        "Add vegetables. Use medium heat and stir gently for even cooking.",
+        "Cook omelette. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 54,
+      "name": "Fried Noodles",
+      "image": "https://example.com/images/fried_noodles.jpg",
+      "time_minutes": 25,
+      "calories": 410,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "noodles",
+          "weight": "50g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Boil noodles. Use medium heat and stir gently for even cooking.",
+        "Stir fry vegetables. Use medium heat and stir gently for even cooking.",
+        "Mix together. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 55,
+      "name": "Banana Smoothie",
+      "image": "https://example.com/images/banana_smoothie.jpg",
+      "time_minutes": 5,
+      "calories": 180,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "banana",
+          "weight": "50g"
+        },
+        {
+          "name": "milk",
+          "weight": "200ml"
+        },
+        {
+          "name": "honey",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Blend all ingredients. Use medium heat and stir gently for even cooking.",
+        "Serve chilled. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Drink"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 56,
+      "name": "Egg Roti",
+      "image": "https://example.com/images/egg_roti.jpg",
+      "time_minutes": 20,
+      "calories": 320,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Prepare dough. Use medium heat and stir gently for even cooking.",
+        "Add filling. Use medium heat and stir gently for even cooking.",
+        "Cook roti. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 57,
+      "name": "Grilled Cheese Sandwich",
+      "image": "https://example.com/images/grilled_cheese.jpg",
+      "time_minutes": 10,
+      "calories": 280,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Butter bread. Use medium heat and stir gently for even cooking.",
+        "Add cheese. Use medium heat and stir gently for even cooking.",
+        "Grill. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 58,
+      "name": "Chicken Burger",
+      "image": "https://example.com/images/chicken_burger.jpg",
+      "time_minutes": 25,
+      "calories": 450,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "chicken patty",
+          "weight": "50g"
+        },
+        {
+          "name": "bun",
+          "weight": "50g"
+        },
+        {
+          "name": "lettuce",
+          "weight": "50g"
+        },
+        {
+          "name": "sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook patty. Use medium heat and stir gently for even cooking.",
+        "Assemble burger. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 59,
+      "name": "Vegetable Fried Rice",
+      "image": "https://example.com/images/veg_fried_rice.jpg",
+      "time_minutes": 20,
+      "calories": 300,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook rice. Use medium heat and stir gently for even cooking.",
+        "Stir fry vegetables. Use medium heat and stir gently for even cooking.",
+        "Mix rice. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 60,
+      "name": "Milk Rice (Kiribath)",
+      "image": "https://example.com/images/kiribath.jpg",
+      "time_minutes": 30,
+      "calories": 340,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "coconut milk",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook rice. Use medium heat and stir gently for even cooking.",
+        "Add coconut milk. Use medium heat and stir gently for even cooking.",
+        "Set. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 61,
+      "name": "Chicken Cutlets",
+      "image": "https://example.com/images/chicken_cutlet.jpg",
+      "time_minutes": 35,
+      "calories": 420,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "breadcrumbs",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Prepare mix. Use medium heat and stir gently for even cooking.",
+        "Shape cutlets. Use medium heat and stir gently for even cooking.",
+        "Fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 62,
+      "name": "Vegetable Samosa",
+      "image": "https://example.com/images/samosa.jpg",
+      "time_minutes": 30,
+      "calories": 260,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "peas",
+          "weight": "50g"
+        },
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Prepare filling. Use medium heat and stir gently for even cooking.",
+        "Shape samosa. Use medium heat and stir gently for even cooking.",
+        "Fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 63,
+      "name": "Chicken Pasta",
+      "image": "https://example.com/images/chicken_pasta.jpg",
+      "time_minutes": 30,
+      "calories": 430,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "pasta",
+          "weight": "50g"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "cream",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil pasta. Use medium heat and stir gently for even cooking.",
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Mix sauce. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 64,
+      "name": "Vegetable Salad",
+      "image": "https://example.com/images/veg_salad.jpg",
+      "time_minutes": 10,
+      "calories": 140,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "lettuce",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "cucumber",
+          "weight": "50g"
+        },
+        {
+          "name": "lemon",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Chop vegetables. Use medium heat and stir gently for even cooking.",
+        "Mix and season. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Healthy"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 65,
+      "name": "Egg Sandwich",
+      "image": "https://example.com/images/egg_sandwich.jpg",
+      "time_minutes": 10,
+      "calories": 260,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook egg. Use medium heat and stir gently for even cooking.",
+        "Assemble sandwich. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 66,
+      "name": "Chicken Kottu",
+      "image": "https://example.com/images/chicken_kottu.jpg",
+      "time_minutes": 35,
+      "calories": 480,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "roti",
+          "weight": "50g"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Chop roti. Use medium heat and stir gently for even cooking.",
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Mix and stir fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 67,
+      "name": "Vegetable Soup",
+      "image": "https://example.com/images/veg_soup.jpg",
+      "time_minutes": 25,
+      "calories": 160,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "beans",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil vegetables. Use medium heat and stir gently for even cooking.",
+        "Season. Use medium heat and stir gently for even cooking.",
+        "Serve. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Healthy"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 68,
+      "name": "Fish Fry",
+      "image": "https://example.com/images/fish_fry.jpg",
+      "time_minutes": 20,
+      "calories": 360,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "fish",
+          "weight": "200g"
+        },
+        {
+          "name": "chili",
+          "weight": "50g"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Season fish. Use medium heat and stir gently for even cooking.",
+        "Fry until golden. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 69,
+      "name": "Oats Porridge",
+      "image": "https://example.com/images/oats_porridge.jpg",
+      "time_minutes": 10,
+      "calories": 190,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "oats",
+          "weight": "50g"
+        },
+        {
+          "name": "milk",
+          "weight": "200ml"
+        },
+        {
+          "name": "honey",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil oats. Use medium heat and stir gently for even cooking.",
+        "Add milk. Use medium heat and stir gently for even cooking.",
+        "Sweeten. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 70,
+      "name": "Vegetable Pizza",
+      "image": "https://example.com/images/veg_pizza.jpg",
+      "time_minutes": 30,
+      "calories": 450,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "pizza base",
+          "weight": "50g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare base. Use medium heat and stir gently for even cooking.",
+        "Add toppings. Use medium heat and stir gently for even cooking.",
+        "Bake. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 71,
+      "name": "Chicken Tikka",
+      "image": "https://example.com/images/chicken_tikka.jpg",
+      "time_minutes": 35,
+      "calories": 420,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "yogurt",
+          "weight": "100g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Marinate chicken. Use medium heat and stir gently for even cooking.",
+        "Grill. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 72,
+      "name": "Vegetable Noodles",
+      "image": "https://example.com/images/veg_noodles.jpg",
+      "time_minutes": 20,
+      "calories": 320,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "noodles",
+          "weight": "50g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil noodles. Use medium heat and stir gently for even cooking.",
+        "Stir fry vegetables. Use medium heat and stir gently for even cooking.",
+        "Mix. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 73,
+      "name": "Fruit Smoothie Bowl",
+      "image": "https://example.com/images/smoothie_bowl.jpg",
+      "time_minutes": 10,
+      "calories": 210,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "banana",
+          "weight": "50g"
+        },
+        {
+          "name": "berries",
+          "weight": "50g"
+        },
+        {
+          "name": "yogurt",
+          "weight": "100g"
+        }
+      ],
+      "steps": [
+        "Blend fruits. Use medium heat and stir gently for even cooking.",
+        "Top and serve. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Healthy"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 74,
+      "name": "Chicken Fried Noodles",
+      "image": "https://example.com/images/chicken_noodles.jpg",
+      "time_minutes": 25,
+      "calories": 430,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "noodles",
+          "weight": "50g"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Boil noodles. Use medium heat and stir gently for even cooking.",
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Stir fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 75,
+      "name": "Pancakes",
+      "image": "https://example.com/images/pancakes.jpg",
+      "time_minutes": 15,
+      "calories": 300,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "milk",
+          "weight": "200ml"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "butter",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare batter. Use medium heat and stir gently for even cooking.",
+        "Cook pancakes. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 76,
+      "name": "String Hoppers with Dhal Curry",
+      "image": "https://example.com/images/string_hoppers.jpg",
+      "time_minutes": 30,
+      "calories": 320,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "string hoppers",
+          "weight": "50g"
+        },
+        {
+          "name": "lentils",
+          "weight": "50g"
+        },
+        {
+          "name": "coconut milk",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare dhal curry. Use medium heat and stir gently for even cooking.",
+        "Steam string hoppers. Use medium heat and stir gently for even cooking.",
+        "Serve together. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 77,
+      "name": "Chicken Stew",
+      "image": "https://example.com/images/chicken_stew.jpg",
+      "time_minutes": 40,
+      "calories": 390,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "carrot",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Add vegetables. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 78,
+      "name": "Vegetable Fried Roti",
+      "image": "https://example.com/images/fried_roti.jpg",
+      "time_minutes": 20,
+      "calories": 340,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "roti",
+          "weight": "50g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Chop roti. Use medium heat and stir gently for even cooking.",
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Stir fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 79,
+      "name": "Boiled Egg Curry",
+      "image": "https://example.com/images/boiled_egg_curry.jpg",
+      "time_minutes": 25,
+      "calories": 330,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "eggs",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare gravy. Use medium heat and stir gently for even cooking.",
+        "Add eggs. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 80,
+      "name": "Vegetable Upma",
+      "image": "https://example.com/images/upma.jpg",
+      "time_minutes": 20,
+      "calories": 260,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "semolina",
+          "weight": "50g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Roast semolina. Use medium heat and stir gently for even cooking.",
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Mix and cook. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 81,
+      "name": "Chicken Submarine",
+      "image": "https://example.com/images/chicken_submarine.jpg",
+      "time_minutes": 20,
+      "calories": 470,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        },
+        {
+          "name": "sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Assemble submarine. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 82,
+      "name": "Vegetable Stir Fry",
+      "image": "https://example.com/images/veg_stir_fry.jpg",
+      "time_minutes": 15,
+      "calories": 220,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "mixed vegetables",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        },
+        {
+          "name": "salt",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Heat oil. Use medium heat and stir gently for even cooking.",
+        "Stir fry vegetables. Use medium heat and stir gently for even cooking.",
+        "Season. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Healthy"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 83,
+      "name": "Fish Curry",
+      "image": "https://example.com/images/fish_curry.jpg",
+      "time_minutes": 35,
+      "calories": 360,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "fish",
+          "weight": "200g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "tomato",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare curry base. Use medium heat and stir gently for even cooking.",
+        "Add fish. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 84,
+      "name": "Peanut Butter Sandwich",
+      "image": "https://example.com/images/peanut_butter_sandwich.jpg",
+      "time_minutes": 5,
+      "calories": 290,
+      "rating": 4.3,
+      "ingredients": [
+        {
+          "name": "bread",
+          "weight": "2 slices"
+        },
+        {
+          "name": "peanut butter",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Spread peanut butter. Use medium heat and stir gently for even cooking.",
+        "Serve. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast",
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 85,
+      "name": "Vegetable Biriyani",
+      "image": "https://example.com/images/veg_biriyani.jpg",
+      "time_minutes": 45,
+      "calories": 420,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Add rice and spices. Use medium heat and stir gently for even cooking.",
+        "Cook till done. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 86,
+      "name": "Chicken Roll",
+      "image": "https://example.com/images/chicken_roll.jpg",
+      "time_minutes": 20,
+      "calories": 380,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Prepare filling. Use medium heat and stir gently for even cooking.",
+        "Roll and fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 87,
+      "name": "Vegetable Cutlets",
+      "image": "https://example.com/images/veg_cutlet.jpg",
+      "time_minutes": 30,
+      "calories": 270,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "breadcrumbs",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Mix ingredients. Use medium heat and stir gently for even cooking.",
+        "Shape cutlets. Use medium heat and stir gently for even cooking.",
+        "Fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 88,
+      "name": "Chicken Dumplings",
+      "image": "https://example.com/images/chicken_dumplings.jpg",
+      "time_minutes": 35,
+      "calories": 340,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "garlic",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare filling. Use medium heat and stir gently for even cooking.",
+        "Shape dumplings. Use medium heat and stir gently for even cooking.",
+        "Steam. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 89,
+      "name": "Vegetable Pulao",
+      "image": "https://example.com/images/veg_pulao.jpg",
+      "time_minutes": 30,
+      "calories": 360,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Add rice and spices. Use medium heat and stir gently for even cooking.",
+        "Cook. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 90,
+      "name": "Omelette Rice",
+      "image": "https://example.com/images/omelette_rice.jpg",
+      "time_minutes": 15,
+      "calories": 340,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook omelette. Use medium heat and stir gently for even cooking.",
+        "Serve over rice. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 91,
+      "name": "Chicken BBQ",
+      "image": "https://example.com/images/chicken_bbq.jpg",
+      "time_minutes": 45,
+      "calories": 480,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "bbq sauce",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Marinate chicken. Use medium heat and stir gently for even cooking.",
+        "Grill until done. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 92,
+      "name": "Vegetable Curry with Coconut Milk",
+      "image": "https://example.com/images/veg_coconut_curry.jpg",
+      "time_minutes": 35,
+      "calories": 300,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "coconut milk",
+          "weight": "50g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook vegetables. Use medium heat and stir gently for even cooking.",
+        "Add coconut milk. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 93,
+      "name": "Chicken Fried Chicken",
+      "image": "https://example.com/images/fried_chicken.jpg",
+      "time_minutes": 30,
+      "calories": 520,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Season chicken. Use medium heat and stir gently for even cooking.",
+        "Coat and fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 94,
+      "name": "Yogurt Fruit Bowl",
+      "image": "https://example.com/images/yogurt_fruit_bowl.jpg",
+      "time_minutes": 5,
+      "calories": 190,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "yogurt",
+          "weight": "100g"
+        },
+        {
+          "name": "banana",
+          "weight": "50g"
+        },
+        {
+          "name": "apple",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Mix yogurt and fruits. Use medium heat and stir gently for even cooking.",
+        "Serve chilled. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Healthy"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 95,
+      "name": "Vegetable Rice & Curry",
+      "image": "https://example.com/images/rice_curry.jpg",
+      "time_minutes": 40,
+      "calories": 430,
+      "rating": 4.7,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "vegetable curry",
+          "weight": "50g"
+        },
+        {
+          "name": "sambol",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare curries. Use medium heat and stir gently for even cooking.",
+        "Serve with rice. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 96,
+      "name": "Chicken Shawarma Plate",
+      "image": "https://example.com/images/shawarma_plate.jpg",
+      "time_minutes": 30,
+      "calories": 460,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "salad",
+          "weight": "50g"
+        },
+        {
+          "name": "sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook chicken. Use medium heat and stir gently for even cooking.",
+        "Prepare rice. Use medium heat and stir gently for even cooking.",
+        "Assemble plate. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 97,
+      "name": "Vegetable Pancakes",
+      "image": "https://example.com/images/veg_pancake.jpg",
+      "time_minutes": 20,
+      "calories": 280,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "flour",
+          "weight": "150g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        }
+      ],
+      "steps": [
+        "Prepare batter. Use medium heat and stir gently for even cooking.",
+        "Cook pancakes. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 98,
+      "name": "Fish Cutlets",
+      "image": "https://example.com/images/fish_cutlet.jpg",
+      "time_minutes": 30,
+      "calories": 360,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "fish",
+          "weight": "200g"
+        },
+        {
+          "name": "potato",
+          "weight": "150g"
+        },
+        {
+          "name": "breadcrumbs",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Prepare mix. Use medium heat and stir gently for even cooking.",
+        "Shape cutlets. Use medium heat and stir gently for even cooking.",
+        "Fry. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Snack"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 99,
+      "name": "Vegetable Lasagna",
+      "image": "https://example.com/images/veg_lasagna.jpg",
+      "time_minutes": 45,
+      "calories": 440,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "lasagna sheets",
+          "weight": "50g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "cheese",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Layer ingredients. Use medium heat and stir gently for even cooking.",
+        "Bake. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 100,
+      "name": "Milkshake",
+      "image": "https://example.com/images/milkshake.jpg",
+      "time_minutes": 5,
+      "calories": 310,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "milk",
+          "weight": "200ml"
+        },
+        {
+          "name": "ice cream",
+          "weight": "50g"
+        },
+        {
+          "name": "sugar",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Blend ingredients. Use medium heat and stir gently for even cooking.",
+        "Serve chilled. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Drink"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 101,
+      "name": "Chicken Sausage Rice",
+      "image": "https://example.com/images/sausage_rice.jpg",
+      "time_minutes": 25,
+      "calories": 420,
+      "rating": 4.5,
+      "ingredients": [
+        {
+          "name": "rice",
+          "weight": "200g"
+        },
+        {
+          "name": "chicken sausage",
+          "weight": "50g"
+        },
+        {
+          "name": "onion",
+          "weight": "50g"
+        },
+        {
+          "name": "oil",
+          "weight": "10ml"
+        }
+      ],
+      "steps": [
+        "Cook sausage. Use medium heat and stir gently for even cooking.",
+        "Mix with rice. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 102,
+      "name": "Vegetable Omelette Wrap",
+      "image": "https://example.com/images/omelette_wrap.jpg",
+      "time_minutes": 15,
+      "calories": 310,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "egg",
+          "weight": "2 pcs"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "roti",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook omelette. Use medium heat and stir gently for even cooking.",
+        "Wrap in roti. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Breakfast"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 103,
+      "name": "Chicken Curry Sri Lankan",
+      "image": "https://example.com/images/sl_chicken_curry.jpg",
+      "time_minutes": 45,
+      "calories": 460,
+      "rating": 4.8,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "weight": "200g"
+        },
+        {
+          "name": "spices",
+          "weight": "50g"
+        },
+        {
+          "name": "coconut milk",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Cook curry base. Use medium heat and stir gently for even cooking.",
+        "Add chicken. Use medium heat and stir gently for even cooking.",
+        "Simmer. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Lunch",
+        "Dinner"
+      ],
+      "isVegetarian": false
+    },
+    {
+      "id": 104,
+      "name": "Vegetable Rice Noodles",
+      "image": "https://example.com/images/rice_noodles.jpg",
+      "time_minutes": 20,
+      "calories": 330,
+      "rating": 4.4,
+      "ingredients": [
+        {
+          "name": "rice noodles",
+          "weight": "50g"
+        },
+        {
+          "name": "vegetables",
+          "weight": "150g"
+        },
+        {
+          "name": "soy sauce",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Boil noodles. Use medium heat and stir gently for even cooking.",
+        "Stir fry vegetables. Use medium heat and stir gently for even cooking.",
+        "Mix. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dinner"
+      ],
+      "isVegetarian": true
+    },
+    {
+      "id": 105,
+      "name": "Fruit Custard",
+      "image": "https://example.com/images/fruit_custard.jpg",
+      "time_minutes": 15,
+      "calories": 260,
+      "rating": 4.6,
+      "ingredients": [
+        {
+          "name": "milk",
+          "weight": "200ml"
+        },
+        {
+          "name": "custard powder",
+          "weight": "50g"
+        },
+        {
+          "name": "fruits",
+          "weight": "50g"
+        }
+      ],
+      "steps": [
+        "Prepare custard. Use medium heat and stir gently for even cooking.",
+        "Add fruits. Use medium heat and stir gently for even cooking.",
+        "Chill. Use medium heat and stir gently for even cooking."
+      ],
+      "category": [
+        "Dessert"
+      ],
+      "isVegetarian": true
+    }
+  ]

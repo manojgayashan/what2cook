@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "what2cook.app"
-               BlueprintName = "what2cook"
-               ReferencedContainer = "container:what2cook.xcodeproj">
+               BuildableName = "What2Cook.app"
+               BlueprintName = "What2Cook"
+               ReferencedContainer = "container:What2Cook.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "what2cookTests.xctest"
-               BlueprintName = "what2cookTests"
-               ReferencedContainer = "container:what2cook.xcodeproj">
+               BuildableName = "What2CookTests.xctest"
+               BlueprintName = "What2CookTests"
+               ReferencedContainer = "container:What2Cook.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "what2cook.app"
-            BlueprintName = "what2cook"
-            ReferencedContainer = "container:what2cook.xcodeproj">
+            BuildableName = "What2Cook.app"
+            BlueprintName = "What2Cook"
+            ReferencedContainer = "container:What2Cook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "what2cook.app"
-            BlueprintName = "what2cook"
-            ReferencedContainer = "container:what2cook.xcodeproj">
+            BuildableName = "What2Cook.app"
+            BlueprintName = "What2Cook"
+            ReferencedContainer = "container:What2Cook.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

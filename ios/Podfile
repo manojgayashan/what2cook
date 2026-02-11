@@ -14,7 +14,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'what2cook' do
+target 'What2Cook' do
   config = use_native_modules!
 
   use_react_native!(

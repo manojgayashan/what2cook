@@ -1,4 +1,4 @@
-package com.what2cook
+package com.manojgayashan.what2cook
 
 import android.app.Application
 import com.facebook.react.PackageList
