@@ -18,7 +18,9 @@ const COLORS = {
   blackMain: '#000000',
 
   gray100: '#F3F4F6',
+  gray200: '#e8eaec',
   gray300: '#D1D5DB',
+  gray500: '#858a91',
   gray700: '#374151',
   gray900: '#111827',
   grayMain: '#6B7280',

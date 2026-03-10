@@ -10,18 +10,17 @@ export const AppProvider = ({ children }) => {
   const [homeUrl, setHomeUrl] = useState('https://dhabione.com/');
 
   return (
-      <SafeAreaProvider>
-    <AppContext.Provider
-      value={{
-        homeUrl,
-        setHomeUrl
-      }}
-    >
-      <SafeAreaView style={{flex:1,backgroundColor:COLORS.whiteMain}}>
+    <SafeAreaProvider>
+      <AppContext.Provider
+        value={{
+          homeUrl,
+          setHomeUrl
+        }}
+      >
+
         <StatusBar barStyle={'dark-content'} backgroundColor={COLORS.whiteMain} />
-      {children}
-      </SafeAreaView>
-    </AppContext.Provider>
-      </SafeAreaProvider>
+        {children}
+      </AppContext.Provider>
+    </SafeAreaProvider>
   );
 };

@@ -1,4 +1,7 @@
 {
   "name": "What2Cook",
-  "displayName": "What2Cook"
+  "displayName": "What2Cook",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-9079412151911301~9154073190"
+  }
 }

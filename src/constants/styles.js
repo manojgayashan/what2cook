@@ -112,25 +112,29 @@ const globalStyles = StyleSheet.create({
     },
 
     searchInput:{
-        backgroundColor:COLORS.gray100,
+        backgroundColor:COLORS.whiteMain,
         width:windowWidth-88,
         borderRadius:16,
         paddingHorizontal:16,
-        height:40
+        height:40,
+        borderColor:COLORS.gray200,
+        borderWidth:1
     },
 
     searchButton:{
-        backgroundColor:COLORS.gray100,
+        backgroundColor:COLORS.whiteMain,
         height:40,
         width:40,
         borderRadius:20,
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        borderColor:COLORS.gray200,
+        borderWidth:1
     },
 
     recipeSheet:{
         position:'absolute',
-        bottom:16,
+        bottom:66,
         left:16,
         backgroundColor:COLORS.whiteMain,
         padding:16,
@@ -141,6 +145,8 @@ const globalStyles = StyleSheet.create({
         shadowOpacity: 0.08,
         shadowRadius: 12,
         elevation: 4,
+        borderColor:COLORS.gray200,
+        borderWidth:1
     }
 });
 

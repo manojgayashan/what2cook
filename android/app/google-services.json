@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159871521542",
+    "project_id": "what2cook-caad5",
+    "storage_bucket": "what2cook-caad5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159871521542:android:e74f91d77b449219c18487",
+        "android_client_info": {
+          "package_name": "com.manojgayashan.what2cook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHzHXNq4FGm9qSKOvmc4-ZV3MAG1SDezk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -43,5 +43,6 @@ const styles = StyleSheet.create({
   loader: {
     position: 'absolute',
     zIndex: 1,
+    // resizeMode:'contain'
   },
 })
