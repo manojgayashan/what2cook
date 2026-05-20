@@ -20,52 +20,52 @@ const recipeList = require('../constants/recipes.json')
 // ─── Tokens ───────────────────────────────────────────────────────────────────
 
 const DARK = '#111111'
-const BG   = '#FAFAF8'
+const BG = '#FAFAF8'
 
 // ─── Custom animation definitions ────────────────────────────────────────────
 
 Animatable.initializeRegistryWithDefinitions({
   chipIn: {
     from: { opacity: 0, scale: 0.65, translateY: 8 },
-    to:   { opacity: 1, scale: 1,    translateY: 0 },
+    to: { opacity: 1, scale: 1, translateY: 0 },
   },
   sheetUp: {
     from: { opacity: 0, translateY: 90 },
-    to:   { opacity: 1, translateY: 0  },
+    to: { opacity: 1, translateY: 0 },
   },
   fadeSlideIn: {
     from: { opacity: 0, translateY: -6 },
-    to:   { opacity: 1, translateY: 0  },
+    to: { opacity: 1, translateY: 0 },
   },
   countPop: {
-    0:   { scale: 1    },
+    0: { scale: 1 },
     0.3: { scale: 1.18 },
     0.6: { scale: 0.94 },
-    1:   { scale: 1    },
+    1: { scale: 1 },
   },
 })
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const CATEGORY_META = {
-  protein:   { label: 'Protein',    emoji: '🥩' },
-  dairy:     { label: 'Dairy',      emoji: '🧀' },
+  protein: { label: 'Protein', emoji: '🥩' },
+  dairy: { label: 'Dairy', emoji: '🧀' },
   vegetable: { label: 'Vegetables', emoji: '🥕' },
-  herb:      { label: 'Herbs',      emoji: '🌿' },
-  spice:     { label: 'Spices',     emoji: '🌶️' },
-  grain:     { label: 'Grains',     emoji: '🍚' },
-  oil:       { label: 'Oils',       emoji: '🫒' },
-  sauce:     { label: 'Sauces',     emoji: '🧂' },
-  extra:     { label: 'Extras',     emoji: '🍄' },
+  herb: { label: 'Herbs', emoji: '🌿' },
+  spice: { label: 'Spices', emoji: '🌶️' },
+  grain: { label: 'Grains', emoji: '🍚' },
+  oil: { label: 'Oils', emoji: '🫒' },
+  sauce: { label: 'Sauces', emoji: '🧂' },
+  extra: { label: 'Extras', emoji: '🍄' },
 }
 
 const CATEGORY_KEYS = ['all', ...Object.keys(CATEGORY_META)]
 
-const SIZE_CONFIG  = { small: { columns: 5 }, medium: { columns: 4 }, large: { columns: 3 } }
+const SIZE_CONFIG = { small: { columns: 5 }, medium: { columns: 4 }, large: { columns: 3 } }
 const SIZE_OPTIONS = [
-  { key: 'small',  icon: 'grid' },
+  { key: 'small', icon: 'grid' },
   { key: 'medium', icon: 'grid-outline' },
-  { key: 'large',  icon: 'stop-outline' },
+  { key: 'large', icon: 'stop-outline' },
 ]
 
 function getMatchingRecipes(sel) {
@@ -81,7 +81,7 @@ function getMatchingRecipes(sel) {
 
 function CategoryChip({ cat, active, onPress }) {
   const scale = useRef(new Animated.Value(1)).current
-  const anim  = useRef(new Animated.Value(active ? 1 : 0)).current
+  const anim = useRef(new Animated.Value(active ? 1 : 0)).current
 
   useEffect(() => {
     Animated.timing(anim, { toValue: active ? 1 : 0, duration: 200, useNativeDriver: false }).start()
@@ -89,17 +89,17 @@ function CategoryChip({ cat, active, onPress }) {
 
   const handlePress = () => {
     Animated.sequence([
-      Animated.timing(scale, { toValue: 0.86, duration: 70,  useNativeDriver: true }),
-      Animated.spring(scale,  { toValue: 1,    friction: 4,   useNativeDriver: true }),
+      Animated.timing(scale, { toValue: 0.86, duration: 70, useNativeDriver: true }),
+      Animated.spring(scale, { toValue: 1, friction: 4, useNativeDriver: true }),
     ]).start()
     onPress(cat)
   }
 
-  const bgColor     = anim.interpolate({ inputRange: [0,1], outputRange: ['transparent', DARK] })
-  const borderColor = anim.interpolate({ inputRange: [0,1], outputRange: [DARK + '18', DARK] })
-  const textColor   = anim.interpolate({ inputRange: [0,1], outputRange: [DARK + '88', '#FFFFFF'] })
-  const isAll       = cat === 'all'
-  const meta        = CATEGORY_META[cat]
+  const bgColor = anim.interpolate({ inputRange: [0, 1], outputRange: ['transparent', DARK] })
+  const borderColor = anim.interpolate({ inputRange: [0, 1], outputRange: [DARK + '18', DARK] })
+  const textColor = anim.interpolate({ inputRange: [0, 1], outputRange: [DARK + '88', '#FFFFFF'] })
+  const isAll = cat === 'all'
+  const meta = CATEGORY_META[cat]
 
   return (
     <Animated.View style={{ transform: [{ scale }] }}>
@@ -123,7 +123,7 @@ function IngredientChip({ item, onRemove, delay }) {
   const handlePress = () => {
     Animated.sequence([
       Animated.timing(scale, { toValue: 0.82, duration: 70, useNativeDriver: true }),
-      Animated.timing(scale, { toValue: 1,    duration: 70, useNativeDriver: true }),
+      Animated.timing(scale, { toValue: 1, duration: 70, useNativeDriver: true }),
     ]).start(() => onRemove(item))
   }
 
@@ -151,7 +151,7 @@ function IngredientChip({ item, onRemove, delay }) {
 
 function RecipeCountBadge({ count }) {
   const prevCount = useRef(count)
-  const badgeRef  = useRef(null)
+  const badgeRef = useRef(null)
 
   useEffect(() => {
     if (count !== prevCount.current && badgeRef.current) {
@@ -177,27 +177,27 @@ export default function Home() {
 
   const navigation = useNavigation()
 
-  const scrollX        = useRef(new Animated.Value(0)).current
+  const scrollX = useRef(new Animated.Value(0)).current
   const [contentWidth, setContentWidth] = useState(0)
-  const [layoutWidth,  setLayoutWidth]  = useState(0)
+  const [layoutWidth, setLayoutWidth] = useState(0)
 
   // CTA button animations
   const btnScale = useRef(new Animated.Value(1)).current
 
-  const [selected,       setSelected]       = useState([])
-  const [recipes,        setRecipes]        = useState([])
-  const [searchInput,    setSearchInput]    = useState('')
+  const [selected, setSelected] = useState([])
+  const [recipes, setRecipes] = useState([])
+  const [searchInput, setSearchInput] = useState('')
   const [activeCategory, setActiveCategory] = useState('all')
-  const [cardSize,       setCardSize]       = useState('medium')
-  const [groupedView,    setGroupedView]    = useState(true)
-  const [searchFocused,  setSearchFocused]  = useState(false)
+  const [cardSize, setCardSize] = useState('medium')
+  const [groupedView, setGroupedView] = useState(false)
+  const [searchFocused, setSearchFocused] = useState(false)
 
   // Pulse CTA whenever recipe count changes
   useEffect(() => {
     if (recipes.length > 0) {
       Animated.sequence([
-        Animated.timing(btnScale, { toValue: 0.95, duration: 90,  useNativeDriver: true }),
-        Animated.spring(btnScale, { toValue: 1,    friction: 5,   useNativeDriver: true }),
+        Animated.timing(btnScale, { toValue: 0.95, duration: 90, useNativeDriver: true }),
+        Animated.spring(btnScale, { toValue: 1, friction: 5, useNativeDriver: true }),
       ]).start()
     }
   }, [recipes.length])
@@ -234,7 +234,7 @@ export default function Home() {
 
   // ─── Actions ─────────────────────────────────────────────────────────────
 
-  const search      = useCallback((t) => setSearchInput(t), [])
+  const search = useCallback((t) => setSearchInput(t), [])
   const clearSearch = useCallback(() => setSearchInput(''), [])
 
   const toggleIngredient = useCallback((item) => {
@@ -335,7 +335,7 @@ export default function Home() {
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
-      <StatusBar barStyle="dark-content" backgroundColor={BG} />
+      {/* <StatusBar barStyle="dark-content" backgroundColor={BG} /> */}
 
       <CollapsibleHeader
         title="What2Cook"
@@ -499,7 +499,7 @@ export default function Home() {
               horizontal
               showsHorizontalScrollIndicator={false}
               scrollEventThrottle={16}
-              onLayout={e  => setLayoutWidth(e.nativeEvent.layout.width)}
+              onLayout={e => setLayoutWidth(e.nativeEvent.layout.width)}
               onContentSizeChange={w => setContentWidth(w)}
               onScroll={Animated.event(
                 [{ nativeEvent: { contentOffset: { x: scrollX } } }],
@@ -805,7 +805,7 @@ const styles = StyleSheet.create({
   sheet: {
     position: 'absolute',
     bottom: 60,
-    left:16,
+    left: 16,
     right: 16,
     backgroundColor: '#FFFFFF',
     borderRadius: 26,
@@ -841,7 +841,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   statusIconActive: { backgroundColor: COLORS.primaryMain },
-  statusIconEmpty:  { backgroundColor: DARK + '08' },
+  statusIconEmpty: { backgroundColor: DARK + '08' },
   statusTitle: {
     fontSize: 15,
     fontWeight: '700',
@@ -906,13 +906,14 @@ const styles = StyleSheet.create({
     bottom: 0,
     width: 44,
   },
-  fadeLeft:  { left: 0 },
+  fadeLeft: { left: 0 },
   fadeRight: { right: 0 },
 
   // ── CTA ───────────────────────────────────────────────────────────────────
   ctaBtn: {
     borderRadius: 16,
     overflow: 'hidden',
+    height:60
   },
   ctaBtnDisabled: { opacity: 0.45 },
   ctaGradient: {

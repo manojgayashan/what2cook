@@ -42,7 +42,7 @@ export default function CollapsibleHeader({
 
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" />
+            {/* <StatusBar barStyle="dark-content" /> */}
 
             {/* Animated Header */}
             <Animated.View style={[styles.header, { height: collapseArea ? headerHeight : HEADER_MIN_HEIGHT }]}>
