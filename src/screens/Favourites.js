@@ -2,7 +2,7 @@ import {
   View, Text, FlatList, TouchableOpacity,
   ScrollView, Modal, ActivityIndicator, TextInput
 } from 'react-native'
-import React, { useState, useCallback, useMemo, useRef } from 'react'
+import React, { useState, useCallback, useMemo, useRef, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { useFocusEffect } from '@react-navigation/native'
 import CollapsibleHeader from '../components/CollapsibleHeader'
@@ -12,13 +12,12 @@ import RecipeCard from '../components/RecipeCard'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { session } from '../../session'
 import globalStyles from '../constants/styles'
+import getRecipes from '../services/recipesService'
 
 const CATEGORIES = ['All', 'Breakfast', 'Lunch', 'Dinner', 'Snack']
 const RATINGS = ['All', '4.5+', '4.7+', '4.9+']
 const COOK_TIMES = ['All', 'Under 15 min', 'Under 30 min', 'Under 45 min']
 const PAGE_SIZE = 15
-
-const recipeList = require('../constants/recipes.json')
 
 export default function Favourites() {
 
@@ -30,6 +29,7 @@ export default function Favourites() {
   const [showFilterModal, setShowFilterModal] = useState(false)
   const [page, setPage] = useState(1)
   const [loadingMore, setLoadingMore] = useState(false)
+  const [allRecipes, setAllRecipes] = useState([])
 
   // Applied filters
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -54,11 +54,29 @@ export default function Favourites() {
     }, [])
   )
 
+  useEffect(() => {
+    let mounted = true
+
+    getRecipes()
+      .then((data) => {
+        if (mounted && Array.isArray(data)) {
+          setAllRecipes(data)
+        }
+      })
+      .catch((err) => {
+        console.log('Error loading recipes:', err)
+      })
+
+    return () => {
+      mounted = false
+    }
+  }, [])
+
   // ─── Base favourite recipes ───────────────────────────────────────────────
 
   const favouriteRecipes = useMemo(() => {
-    return recipeList.filter(r => favouriteIds.includes(r.id))
-  }, [favouriteIds])
+    return allRecipes.filter(r => favouriteIds.includes(r.id))
+  }, [allRecipes, favouriteIds])
 
   // ─── Reset page & scroll to top ───────────────────────────────────────────
 

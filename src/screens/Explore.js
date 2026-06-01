@@ -2,7 +2,7 @@ import {
   View, Text, FlatList, TouchableOpacity,
   ScrollView, Modal, ActivityIndicator, TextInput
 } from 'react-native'
-import React, { useState, useCallback, useMemo, useRef } from 'react'
+import React, { useState, useCallback, useMemo, useRef,useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import CollapsibleHeader from '../components/CollapsibleHeader'
 import Ionicons from '@react-native-vector-icons/ionicons'
@@ -18,7 +18,7 @@ const RATINGS = ['All', '4.5+', '4.7+', '4.9+']
 const COOK_TIMES = ['All', 'Under 15 min', 'Under 30 min', 'Under 45 min']
 const PAGE_SIZE = 15
 
-const recipeList = require('../constants/recipes.json')
+import getRecipes from '../services/recipesService'
 
 export default function Explore() {
 
@@ -26,6 +26,7 @@ export default function Explore() {
   const flatListRef = useRef(null)
 
   const [favourites, setFavourites] = useState([])
+  const [recipesData, setRecipesData] = useState([])
   const [searchInput, setSearchInput] = useState('')
   const [showFilterModal, setShowFilterModal] = useState(false)
   const [page, setPage] = useState(1)
@@ -74,7 +75,7 @@ export default function Explore() {
 
   const filteredData = useMemo(() => {
     const query = searchInput.trim().toLowerCase()
-    return recipeList.filter(item => {
+    return recipesData.filter(item => {
 
       // Search — matches name or any ingredient name
       if (query) {
@@ -97,7 +98,15 @@ export default function Explore() {
 
       return true
     })
-  }, [searchInput, selectedCategory, vegetarianOnly, selectedRating, selectedTime])
+  }, [searchInput, selectedCategory, vegetarianOnly, selectedRating, selectedTime, recipesData])
+
+  useEffect(() => {
+    let mounted = true
+    getRecipes().then(data => {
+      if (mounted && data && data.length) setRecipesData(data)
+    }).catch((e) => {console.log('Error fetching recipes:', e)})
+    return () => { mounted = false }
+  }, [])
 
   // ─── Pagination ───────────────────────────────────────────────────────────
 

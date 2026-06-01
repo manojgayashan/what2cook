@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { View, Image, ActivityIndicator, StyleSheet } from 'react-native'
+import { appImageStyles as styles } from '../constants/styles'
 
 const AppImage = ({
   source,
@@ -35,14 +36,3 @@ const AppImage = ({
 
 export default AppImage
 
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  loader: {
-    position: 'absolute',
-    zIndex: 1,
-    // resizeMode:'contain'
-  },
-})

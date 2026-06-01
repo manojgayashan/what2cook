@@ -8,19 +8,20 @@ import React, {
 import CollapsibleHeader from '../components/CollapsibleHeader'
 import COLORS from '../constants/colors'
 import Ionicons from '@react-native-vector-icons/ionicons'
-import INGREDIENTS from '../constants/INGREDIENTS'
+// import INGREDIENTS from '../constants/INGREDIENTS-old'
+import getIngredients from '../services/ingredientsService'
+import getRecipes from '../services/recipesService'
 import * as Animatable from 'react-native-animatable'
 import IngredientItem from '../components/IngredientItem'
 import LinearGradient from 'react-native-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-
-const recipeList = require('../constants/recipes.json')
+import { homeStyles as styles } from '../constants/styles'
 
 // ─── Tokens ───────────────────────────────────────────────────────────────────
 
-const DARK = '#111111'
-const BG = '#FAFAF8'
+const DARK = '#0B1A2B'
+const BG = '#F4F7FB'
 
 // ─── Custom animation definitions ────────────────────────────────────────────
 
@@ -67,15 +68,6 @@ const SIZE_OPTIONS = [
   { key: 'medium', icon: 'grid-outline' },
   { key: 'large', icon: 'stop-outline' },
 ]
-
-function getMatchingRecipes(sel) {
-  if (!sel?.length) return []
-  const names = sel.map(i => i.name.toLowerCase().trim())
-  return recipeList.filter(r => {
-    const s = new Set(r.ingredients.map(i => i.name.toLowerCase().trim()))
-    return names.every(n => s.has(n))
-  })
-}
 
 // ─── Animated Category Chip ───────────────────────────────────────────────────
 
@@ -186,11 +178,14 @@ export default function Home() {
 
   const [selected, setSelected] = useState([])
   const [recipes, setRecipes] = useState([])
+  const [ingredients, setIngredients] = useState([])
+  const [allRecipes, setAllRecipes] = useState([])
   const [searchInput, setSearchInput] = useState('')
   const [activeCategory, setActiveCategory] = useState('all')
   const [cardSize, setCardSize] = useState('medium')
   const [groupedView, setGroupedView] = useState(false)
   const [searchFocused, setSearchFocused] = useState(false)
+  const [sheetExpanded, setSheetExpanded] = useState(true)
 
   // Pulse CTA whenever recipe count changes
   useEffect(() => {
@@ -202,16 +197,69 @@ export default function Home() {
     }
   }, [recipes.length])
 
+  // ─── Load ingredients from Firestore ────────────────────────────────────────
+  useEffect(() => {
+    let isMounted = true
+
+    async function loadIngredients() {
+      const data = await getIngredients()
+      console.log('Fetched ingredients:', data)
+      if (isMounted && Array.isArray(data) && data.length > 0) {
+        setIngredients(data)
+      }
+    }
+
+    loadIngredients()
+
+    return () => {
+      isMounted = false
+    }
+  }, [])
+
+  useEffect(() => {
+    let isMounted = true
+
+    getRecipes()
+      .then((data) => {
+        if (isMounted && Array.isArray(data)) {
+          setAllRecipes(data)
+        }
+      })
+      .catch((err) => console.log('Error loading recipes:', err))
+
+    return () => {
+      isMounted = false
+    }
+  }, [])
+
+  const getMatchingRecipes = useCallback((sel) => {
+    if (!sel?.length) return []
+
+    const names = sel.map(i => i.name.toLowerCase().trim())
+    return allRecipes.filter(r => {
+      const s = new Set(r.ingredients.map(i => i.name.toLowerCase().trim()))
+      return names.every(n => s.has(n))
+    })
+  }, [allRecipes])
+
+  useEffect(() => {
+    if (!selected?.length) {
+      setRecipes([])
+      return
+    }
+    setRecipes(getMatchingRecipes(selected))
+  }, [allRecipes, selected, getMatchingRecipes])
+
   // ─── Derived ─────────────────────────────────────────────────────────────
 
   const filteredIngredients = useMemo(() => {
     const q = searchInput.trim().toLowerCase()
-    return INGREDIENTS.filter(item => {
+    return ingredients.filter(item => {
       if (activeCategory !== 'all' && item.category !== activeCategory) return false
       if (q && !item.name.toLowerCase().includes(q)) return false
       return true
     })
-  }, [searchInput, activeCategory])
+  }, [ingredients, searchInput, activeCategory])
 
   const groupedIngredients = useMemo(() => {
     const g = {}
@@ -266,15 +314,18 @@ export default function Home() {
 
   const renderGrid = useCallback((items) => (
     <View style={styles.gridRow}>
-      {items.map(item => (
-        <IngredientItem
-          key={item.id}
-          item={item}
-          selected={selected.some(s => s.id === item.id)}
-          onPress={toggleIngredient}
-          columns={columns}
-        />
-      ))}
+      {items.map(item => {
+        const isSelected = selected.some(s => s.id === item.id)
+        return (
+          <IngredientItem
+            key={item.id}
+            item={item}
+            selected={isSelected}
+            onPress={toggleIngredient}
+            columns={columns}
+          />
+        )
+      })}
     </View>
   ), [selected, toggleIngredient, columns])
 
@@ -356,7 +407,7 @@ export default function Home() {
             </Animatable.View>
           ) : (
             <View style={styles.headerBadge}>
-              <Text style={styles.headerBadgeNum}>{INGREDIENTS.length}</Text>
+              <Text style={styles.headerBadgeNum}>{ingredients.length}</Text>
               <Text style={styles.headerBadgeLabel}> items</Text>
             </View>
           )
@@ -461,10 +512,23 @@ export default function Home() {
           duration={400}
           easing="ease-out-quart"
           useNativeDriver
-          style={styles.sheet}
+          style={[styles.sheet, !sheetExpanded && styles.sheetMinimized]}
         >
-          {/* Handle bar */}
-          <View style={styles.handle} />
+          {/* Handle bar with minimize button */}
+          <View style={styles.handleRow}>
+            <View style={styles.handle} />
+            <TouchableOpacity 
+              onPress={() => setSheetExpanded(!sheetExpanded)} 
+              activeOpacity={0.7}
+              style={styles.toggleBtn}
+            >
+              <Ionicons 
+                name={sheetExpanded ? 'chevron-down' : 'chevron-up'} 
+                size={20} 
+                color={DARK + '55'} 
+              />
+            </TouchableOpacity>
+          </View>
 
           {/* Status row */}
           <View style={styles.statusRow}>
@@ -481,19 +545,24 @@ export default function Home() {
 
             <View style={{ flex: 1 }}>
               <RecipeCountBadge count={recipes.length} />
-              <Text style={styles.statusSub}>
-                {recipes.length === 0
-                  ? 'Try removing an ingredient'
-                  : `Matching ${selected.length} selected ingredient${selected.length !== 1 ? 's' : ''}`}
-              </Text>
+              {sheetExpanded && (
+                <Text style={styles.statusSub}>
+                  {recipes.length === 0
+                    ? 'Try removing an ingredient'
+                    : `Matching ${selected.length} selected ingredient${selected.length !== 1 ? 's' : ''}`}
+                </Text>
+              )}
             </View>
 
-            <TouchableOpacity onPress={clearAll} activeOpacity={0.7} style={styles.sheetClearBtn}>
-              <Text style={styles.sheetClearText}>Clear</Text>
-            </TouchableOpacity>
+            {sheetExpanded && (
+              <TouchableOpacity onPress={clearAll} activeOpacity={0.7} style={styles.sheetClearBtn}>
+                <Text style={styles.sheetClearText}>Clear</Text>
+              </TouchableOpacity>
+            )}
           </View>
 
-          {/* Ingredient chips */}
+          {/* Ingredient chips - only show when expanded */}
+          {sheetExpanded && (
           <View style={styles.chipsOuter}>
             <Animated.ScrollView
               horizontal
@@ -533,8 +602,10 @@ export default function Home() {
               />
             </Animated.View>
           </View>
+          )}
 
-          {/* CTA Button */}
+          {/* CTA Button - only show when expanded */}
+          {sheetExpanded && (
           <Animated.View style={{ transform: [{ scale: btnScale }] }}>
             <TouchableOpacity
               onPress={() => navigation.navigate('SearchPointer', { data: recipes, selectedIng: selected })}
@@ -564,6 +635,7 @@ export default function Home() {
               </LinearGradient>
             </TouchableOpacity>
           </Animated.View>
+          )}
 
         </Animatable.View>
       )}
@@ -572,371 +644,3 @@ export default function Home() {
   )
 }
 
-// ─── Styles ───────────────────────────────────────────────────────────────────
-
-const styles = StyleSheet.create({
-
-  container: {
-    flex: 1,
-    backgroundColor: BG,
-  },
-
-  // ── Header ────────────────────────────────────────────────────────────────
-  logoRing: {
-    width: 36,
-    height: 36,
-    borderRadius: 11,
-    backgroundColor: COLORS.primaryMain + '14',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  logo: {
-    width: 20,
-    height: 20,
-    tintColor: COLORS.primaryMain,
-  },
-  headerClearBtn: {
-    paddingHorizontal: 11,
-    paddingVertical: 5,
-    borderRadius: 9,
-    backgroundColor: DARK + '08',
-  },
-  headerClearText: {
-    fontSize: 12,
-    fontWeight: '700',
-    color: DARK + '55',
-  },
-  headerBadge: {
-    flexDirection: 'row',
-    alignItems: 'baseline',
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 9,
-    backgroundColor: COLORS.primaryMain + '10',
-    borderWidth: 1,
-    borderColor: COLORS.primaryMain + '22',
-  },
-  headerBadgeNum: {
-    fontSize: 13,
-    fontWeight: '800',
-    color: COLORS.primaryMain,
-    letterSpacing: -0.3,
-  },
-  headerBadgeLabel: {
-    fontSize: 11,
-    color: COLORS.primaryMain + 'AA',
-  },
-
-  // ── Search ────────────────────────────────────────────────────────────────
-  searchBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    height: 44,
-    borderRadius: 13,
-    borderWidth: 1.5,
-    borderColor: DARK + '0E',
-    backgroundColor: DARK + '05',
-    paddingHorizontal: 13,
-    marginBottom: 4,
-  },
-  searchBarFocused: {
-    borderColor: COLORS.primaryMain + '55',
-    backgroundColor: COLORS.primaryMain + '05',
-  },
-  searchInput: {
-    flex: 1,
-    fontSize: 14,
-    fontWeight: '500',
-    color: DARK,
-    padding: 0,
-  },
-  searchClear: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
-    backgroundColor: DARK + '10',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginLeft: 6,
-  },
-
-  // ── Toolbar ───────────────────────────────────────────────────────────────
-  toolbar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingVertical: 6,
-    backgroundColor: BG,
-  },
-  categoryScroll: {
-    paddingLeft: 16,
-    gap: 6,
-    paddingRight: 6,
-    alignItems: 'center',
-  },
-  categoryChip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    paddingVertical: 6,
-    paddingHorizontal: 12,
-    borderRadius: 20,
-    borderWidth: 1.5,
-  },
-  categoryEmoji: { fontSize: 12 },
-  categoryLabel: {
-    fontSize: 12,
-    fontWeight: '600',
-    letterSpacing: 0.1,
-  },
-  controls: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 1,
-    paddingHorizontal: 10,
-    borderLeftWidth: 1,
-    borderLeftColor: DARK + '0E',
-  },
-  controlBtn: {
-    width: 28,
-    height: 28,
-    borderRadius: 7,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  controlBtnActive: { backgroundColor: COLORS.primaryMain + '14' },
-  controlDivider: {
-    width: 1,
-    height: 15,
-    backgroundColor: DARK + '0E',
-    marginHorizontal: 3,
-  },
-
-  // ── Grid ─────────────────────────────────────────────────────────────────
-  gridContainer: {
-    paddingHorizontal: 16,
-    paddingTop: 2,
-  },
-  gridRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  flatCount: {
-    fontSize: 11,
-    fontWeight: '700',
-    color: DARK + '30',
-    letterSpacing: 0.9,
-    textTransform: 'uppercase',
-    marginBottom: 10,
-  },
-
-  // ── Empty state ───────────────────────────────────────────────────────────
-  emptyWrap: {
-    alignItems: 'center',
-    paddingTop: 72,
-    gap: 6,
-  },
-  emptyCircle: {
-    width: 58,
-    height: 58,
-    borderRadius: 29,
-    backgroundColor: DARK + '06',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 6,
-  },
-  emptyTitle: {
-    fontSize: 15,
-    fontWeight: '700',
-    color: DARK + '50',
-  },
-  emptySub: {
-    fontSize: 13,
-    color: DARK + '28',
-  },
-
-  // ── Group headers ─────────────────────────────────────────────────────────
-  groupHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingVertical: 12,
-  },
-  groupLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  groupRight: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 2,
-  },
-  groupEmoji: { fontSize: 16 },
-  groupLabel: {
-    fontSize: 14,
-    fontWeight: '700',
-    color: DARK,
-    letterSpacing: -0.1,
-  },
-  groupPill: {
-    paddingHorizontal: 7,
-    paddingVertical: 2,
-    borderRadius: 8,
-    backgroundColor: COLORS.primaryMain + '14',
-  },
-  groupPillText: {
-    fontSize: 11,
-    fontWeight: '700',
-    color: COLORS.primaryMain,
-  },
-  groupSeeAllText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: COLORS.primaryMain,
-  },
-  groupDivider: {
-    height: 1,
-    backgroundColor: DARK + '07',
-    marginBottom: 4,
-    marginTop: 4,
-  },
-
-  // ── Recipe Sheet ──────────────────────────────────────────────────────────
-  sheet: {
-    position: 'absolute',
-    bottom: 60,
-    left: 16,
-    right: 16,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 26,
-    paddingHorizontal: 20,
-    paddingTop: 10,
-    paddingBottom: Platform.OS === 'ios' ? 34 : 20,
-    shadowColor: DARK,
-    shadowOffset: { width: 0, height: -8 },
-    shadowOpacity: 0.08,
-    shadowRadius: 24,
-    elevation: 24,
-  },
-  handle: {
-    width: 36,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: DARK + '14',
-    alignSelf: 'center',
-    marginBottom: 16,
-  },
-
-  statusRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    marginBottom: 14,
-  },
-  statusIcon: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  statusIconActive: { backgroundColor: COLORS.primaryMain },
-  statusIconEmpty: { backgroundColor: DARK + '08' },
-  statusTitle: {
-    fontSize: 15,
-    fontWeight: '700',
-    color: DARK,
-    letterSpacing: -0.1,
-  },
-  statusSub: {
-    fontSize: 12,
-    color: DARK + '45',
-    marginTop: 1,
-  },
-  sheetClearBtn: {
-    paddingHorizontal: 11,
-    paddingVertical: 6,
-    borderRadius: 9,
-    backgroundColor: DARK + '07',
-  },
-  sheetClearText: {
-    fontSize: 12,
-    fontWeight: '700',
-    color: DARK + '55',
-  },
-
-  // ── Chips ─────────────────────────────────────────────────────────────────
-  chipsOuter: {
-    position: 'relative',
-    marginBottom: 14,
-  },
-  chipsScroll: {
-    gap: 8,
-    paddingVertical: 3,
-    paddingRight: 16,
-  },
-  chip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    paddingVertical: 7,
-    paddingLeft: 12,
-    paddingRight: 8,
-    borderRadius: 20,
-    backgroundColor: COLORS.primaryMain + '0D',
-    borderWidth: 1.5,
-    borderColor: COLORS.primaryMain + '30',
-  },
-  chipText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: COLORS.primaryMain,
-  },
-  chipX: {
-    width: 16,
-    height: 16,
-    borderRadius: 8,
-    backgroundColor: COLORS.primaryMain + '1A',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  fadeEdge: {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    width: 44,
-  },
-  fadeLeft: { left: 0 },
-  fadeRight: { right: 0 },
-
-  // ── CTA ───────────────────────────────────────────────────────────────────
-  ctaBtn: {
-    borderRadius: 16,
-    overflow: 'hidden',
-    height:60
-  },
-  ctaBtnDisabled: { opacity: 0.45 },
-  ctaGradient: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 16,
-    paddingHorizontal: 24,
-    gap: 12,
-  },
-  ctaLabel: {
-    fontSize: 15,
-    fontWeight: '700',
-    color: '#fff',
-    letterSpacing: 0.15,
-  },
-  ctaLabelOff: { color: DARK + '40' },
-  ctaArrow: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    backgroundColor: 'rgba(255,255,255,0.9)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Text, TouchableOpacity, StyleSheet, useWindowDimensions } from 'react-native';
+import { Text, TouchableOpacity, useWindowDimensions } from 'react-native';
 import COLORS from '../constants/colors';
 import AppImage from './AppImage';
+import { ingredientItemStyles as styles } from '../constants/styles';
 
 const MARGIN = 4
 const GRID_PADDING = 32 // 16px each side from parent
@@ -24,7 +25,7 @@ export default function IngredientItem({ item, selected, onPress, columns = 4 })
           width: itemSize,
           height: itemSize,
           borderColor: selected ? COLORS.primaryMain : COLORS.gray200,
-          backgroundColor: selected ? COLORS.primaryMain : COLORS.whiteMain,
+          backgroundColor: selected ? COLORS.primaryMain : COLORS.gray100,
         }
       ]}
     >
@@ -37,6 +38,7 @@ export default function IngredientItem({ item, selected, onPress, columns = 4 })
           styles.text,
           { fontSize },
           selected && styles.activeText,
+          !selected && { color: COLORS.black900 },
         ]}
         numberOfLines={2}
       >
@@ -46,23 +48,3 @@ export default function IngredientItem({ item, selected, onPress, columns = 4 })
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    borderRadius: 16,
-    margin: MARGIN,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1.5,
-    paddingHorizontal: 4,
-    paddingVertical: 6,
-  },
-  text: {
-    color: COLORS.gray700,
-    fontWeight: '500',
-    textAlign: 'center',
-    marginTop: 4,
-  },
-  activeText: {
-    color: COLORS.whiteMain,
-  },
-})

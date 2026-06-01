@@ -1,13 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef, Children } from 'react';
 import {
     View,
     Text,
-    StyleSheet,
     Animated,
     TouchableOpacity,
     StatusBar,
+    FlatList,
 } from 'react-native';
 import COLORS from '../constants/colors';
+import { collapsibleHeaderStyles as styles } from '../constants/styles';
 
 const HEADER_MAX_HEIGHT = 120;
 const HEADER_MIN_HEIGHT = 64;
@@ -73,63 +74,64 @@ export default function CollapsibleHeader({
             )}
 
             {/* Scroll Content */}
-            <Animated.ScrollView
-                contentContainerStyle={{
-                    paddingTop: collapseArea
-                        ? HEADER_MAX_HEIGHT + (stickyContent ? 52 : 0)
-                        : 70 + (stickyContent ? 52 : 0),
-                }}
-                scrollEventThrottle={16}
-                onScroll={Animated.event(
-                    [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-                    { useNativeDriver: false }
-                )}
-                nestedScrollEnabled
-                style={{ backgroundColor: COLORS.gray100 }}
-            >
-                {children}
-            </Animated.ScrollView>
+            {(() => {
+                const child = Children.count(children) === 1 ? Children.only(children) : null;
+                const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
+
+                const paddingTop = collapseArea
+                    ? HEADER_MAX_HEIGHT + (stickyContent ? 52 : 0)
+                    : 70 + (stickyContent ? 52 : 0);
+
+                // If the single child is a FlatList (VirtualizedList), render it directly as Animated.FlatList
+                if (child && (child.type === FlatList || child.type?.displayName === 'FlatList' || child.type?.name === 'FlatList')) {
+                    const childProps = child.props || {};
+
+                    const mergedContentStyle = [
+                        childProps.contentContainerStyle || {},
+                        { paddingTop },
+                    ];
+
+                    // Merge onScroll handlers: our Animated.event + child's own onScroll
+                    const childOnScroll = childProps.onScroll;
+                    const animatedOnScroll = Animated.event(
+                        [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+                        { useNativeDriver: false }
+                    );
+
+                    const combinedOnScroll = (e) => {
+                        animatedOnScroll(e);
+                        if (typeof childOnScroll === 'function') childOnScroll(e);
+                    };
+
+                    return (
+                        <AnimatedFlatList
+                            {...childProps}
+                            contentContainerStyle={mergedContentStyle}
+                            onScroll={combinedOnScroll}
+                            scrollEventThrottle={16}
+                            nestedScrollEnabled
+                            style={[{ backgroundColor: COLORS.gray100 }, childProps.style]}
+                        />
+                    );
+                }
+
+                // Fallback: use ScrollView for other children
+                return (
+                    <Animated.ScrollView
+                        contentContainerStyle={{ paddingTop }}
+                        scrollEventThrottle={16}
+                        onScroll={Animated.event(
+                            [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+                            { useNativeDriver: false }
+                        )}
+                        nestedScrollEnabled
+                        style={{ backgroundColor: COLORS.white100 }}
+                    >
+                        {children}
+                    </Animated.ScrollView>
+                );
+            })()}
         </View>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: COLORS.whiteMain,
-    },
-    header: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        backgroundColor: COLORS.whiteMain,
-        zIndex: 100,
-        paddingHorizontal: 16,
-        borderBottomWidth: 1,
-        borderColor: COLORS.gray300,
-    },
-    stickyBar: {
-        position: 'absolute',
-        left: 0,
-        right: 0,
-        zIndex: 99,                         // just below header
-        backgroundColor: COLORS.whiteMain,
-        borderBottomWidth: 1,
-        borderColor: COLORS.gray300,
-    },
-    topRow: {
-        height: HEADER_MIN_HEIGHT,
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-    title: {
-        fontSize: 18,
-        fontWeight: '600',
-        color: COLORS.black900,
-    },
-    collapseArea: {
-        paddingBottom: 12,
-    },
-});

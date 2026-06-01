@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Dimensions } from 'react-native';
 
 import Ionicons from '@react-native-vector-icons/ionicons';
 import COLORS from '../constants/colors';
 import AppImage from '../components/AppImage'
-import globalStyles from '../constants/styles';
+import { recipeCardStyles as styles } from '../constants/styles';
 import { session } from '../../session';
 
 const windowWidth = Dimensions.get('window').width;
@@ -90,87 +90,6 @@ const RecipeCard = ({ recipe, selectedIng, onPress }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  card: {
-    flexDirection: 'row',
-    width: windowWidth,
-    alignItems: 'center',
-    marginHorizontal: 16,
-    marginTop: 16
-  },
-  image: {
-    width: windowWidth / 5.5,
-    height: windowWidth / 5.5,
-    borderRadius: 100,
-    // borderColor: COLORS.gray200,
-    // borderWidth: 1,
-  },
-  infoContainer: {
-    padding: 12,
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    overflow: 'hidden',
-    marginLeft: -50,
-    height: windowWidth / 4.5,
-    width: windowWidth - (windowWidth / 8) - 32,
-    borderColor: COLORS.gray200,
-    borderWidth: 1,
-    paddingLeft: (windowWidth / 8) + 16,
-    justifyContent: 'space-between'
-  },
-  name: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    marginBottom: 4,
-    width: windowWidth / 2
-  },
-  description: {
-    fontSize: 14,
-    color: '#555',
-    marginBottom: 8,
-  },
-  bottomRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  ratingContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  ratingText: {
-    marginLeft: 4,
-    fontSize: 14,
-    color: '#555',
-  },
-  plate: {
-    backgroundColor: COLORS.whiteMain,
-    height: windowWidth / 4,
-    width: windowWidth / 4,
-    borderRadius: windowWidth / 8,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 5,
-    elevation: 3,
-    zIndex: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderColor: COLORS.gray200,
-    borderWidth: 1,
-  },
-  chip: {
-    backgroundColor: COLORS.primaryMain,
-    borderRadius: 20,
-    marginRight: 4,
-    paddingHorizontal: 7,
-    paddingVertical: 3,
-    alignItems: 'center'
-  },
-  chipText: {
-    color: COLORS.whiteMain,
-    fontSize: 12
-  }
-});
+
 
 export default RecipeCard;

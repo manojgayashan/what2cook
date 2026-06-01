@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import {
   View,
   Text,
-  StyleSheet,
   Animated,
   Image,
   StatusBar,
@@ -16,9 +15,10 @@ import COLORS from '../constants/colors';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 import AppImage from '../components/AppImage';
-import INGREDIENTS from '../constants/INGREDIENTS';
+import getIngredients from '../services/ingredientsService'
 import LinearGradient from 'react-native-linear-gradient';
 import { session } from '../../session'
+import { recipeStyles as styles } from '../constants/styles'
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -56,7 +56,7 @@ export default function Recipe() {
   })
 
   function getIngredientImage(name) {
-    return INGREDIENTS.find(
+    return firebaseIngredients.find(
       i => i.name.toLowerCase() === name.toLowerCase()
     )?.image
   }
@@ -64,6 +64,23 @@ export default function Recipe() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const [favourites, setFavourites] = useState([])
+  const [firebaseIngredients, setFirebaseIngredients] = useState([])
+
+  useEffect(() => {
+    let isMounted = true
+
+    getIngredients()
+      .then((data) => {
+        if (isMounted && Array.isArray(data)) {
+          setFirebaseIngredients(data)
+        }
+      })
+      .catch((err) => console.log('Error loading ingredients:', err))
+
+    return () => {
+      isMounted = false
+    }
+  }, [])
 
   const getFavourites =()=>{
 
@@ -171,7 +188,7 @@ export default function Recipe() {
       >
         <View style={styles.content}>
 
-          <View style={{ alignItems: 'center', marginBottom: 16, padding: 16, paddingHorizontal: 0, borderBottomWidth: 1, paddingTop: 0, borderColor: COLORS.gray300 }}>
+          <View style={{  marginBottom: 16, padding: 16, paddingHorizontal: 0, borderBottomWidth: 1, paddingTop: 0, borderColor: COLORS.gray300 }}>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
               <Text style={styles.title}>{recipe.name}</Text>
@@ -196,7 +213,7 @@ export default function Recipe() {
             <Text style={[styles.text15, { fontWeight: '400' }]}>{recipe.about}</Text>
             {/* </View> */}
 
-            <View style={[styles.row, { width: windowWidth, paddingHorizontal: 16, paddingTop: 12, justifyContent: 'space-between' }]}>
+            <View style={[styles.row, { width: windowWidth-32, paddingHorizontal: 0, paddingTop: 12, justifyContent: 'space-between' }]}>
               <View style={[styles.row, { paddingRight: 12 }]}>
                 <MaterialDesignIcons name="clock-outline" size={20} color={COLORS.primaryMain} />
                 <Text style={styles.text}>  {recipe.time_minutes} mins</Text>
@@ -232,7 +249,7 @@ export default function Recipe() {
                 <View style={[styles.row, { justifyContent: 'space-between' }]}>
                   <View style={styles.row}>
                     <View style={styles.ingredient}>
-                      <AppImage source={getIngredientImage(ingredient.name) ? getIngredientImage(ingredient.name) : require('../assets/images/dummy.png')} style={[styles.ingredientsImage, { tintColor: getIngredientImage(ingredient.name) ? 'none' : COLORS.gray500 }]} />
+                      <AppImage source={getIngredientImage(ingredient.name) ? getIngredientImage(ingredient.name) : require('../assets/images/dummy.png')} style={[styles.ingredientsImage]} />
                     </View>
                     <Text style={styles.text15}>{ingredient.name.charAt(0).toUpperCase() + ingredient.name.slice(1)}</Text>
                   </View>
@@ -266,136 +283,3 @@ export default function Recipe() {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    borderRadius: 20,
-  },
-  header: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    overflow: 'hidden',
-    zIndex: 10,
-  },
-  headerImage: {
-    width: windowWidth,
-    height: windowWidth,
-  },
-  topButtons: {
-    position: 'absolute',
-    top: 65,
-    left: 16,
-    right: 16,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  circleBtn: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: 'rgba(255,255,255,0.9)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  content: {
-    padding: 16,
-    borderRadius: 20,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: '600',
-    marginBottom: 2,
-  },
-  text: {
-    fontSize: 14,
-    color: COLORS.black700,
-  },
-  text15: {
-    fontSize: 15,
-    color: COLORS.blackMain,
-    fontWeight: '500'
-    // paddingTop: 4,
-
-  },
-  // STICKY HEADER STYLES
-  stickyHeader: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    height: HEADER_MIN_HEIGHT,
-    backgroundColor: COLORS.whiteMain,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingTop: 50, // status bar padding
-    zIndex: 20,
-  },
-  stickyTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: COLORS.black900,
-    textAlign: 'center',
-    flex: 1,
-    marginHorizontal: 16,
-  },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  category: {
-    marginRight: 6,
-    paddingHorizontal: 12,
-    paddingVertical: 4,
-    borderRadius: 20,
-    borderWidth: 1.5,
-    borderColor: COLORS.primaryMain,
-    color: COLORS.primaryMain,
-    fontSize: 12,
-    fontWeight: '700',
-    marginBottom: 8
-  },
-  ingredientsView: {
-    padding: 16,
-    backgroundColor: COLORS.gray100,
-    marginVertical: 16,
-    borderWidth: 1,
-    borderColor: COLORS.gray300,
-    borderRadius: 16
-  },
-  title2: {
-    fontSize: 20,
-    color: COLORS.blackMain,
-    fontWeight: '500',
-  },
-  step: {
-    backgroundColor: COLORS.primary100,
-    marginVertical: 6,
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: COLORS.primary300
-  },
-  ingredientsImage: {
-    height: 25,
-    width: 25,
-    resizeMode: 'contain',
-  },
-  ingredient: {
-    height: 35,
-    width: 35,
-    backgroundColor: COLORS.primaryMain,
-    marginVertical: 4,
-    marginRight: 8,
-    borderRadius: 8,
-    padding: 4,
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})

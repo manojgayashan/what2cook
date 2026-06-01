@@ -7,6 +7,7 @@ import { Button } from '@react-navigation/elements';
 import Home from '../screens/Home'
 import Explore from '../screens/Explore'
 import Favourites from '../screens/Favourites'
+import Settings from '../screens/Settings'
 import Recipe from '../screens/Recipe'
 import SearchPointer from '../screens/SearchPointer'
 import { Lucide } from "@react-native-vector-icons/lucide";
@@ -26,9 +27,11 @@ function HomeTabs() {
       }} />
       <Tab.Screen name="Favourites" component={Favourites} options={{
         tabBarIcon: ({ color, focused }) => <Lucide name="heart" size={30} color={color} />,
-        
       }}
       />
+      <Tab.Screen name="Settings" component={Settings} options={{
+        tabBarIcon: ({ color, focused }) => <Lucide name="settings" size={30} color={color} />
+      }} />
     </Tab.Navigator>
   );
 }

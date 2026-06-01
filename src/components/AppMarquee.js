@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
   View,
-  StyleSheet,
   Dimensions,
 } from 'react-native';
 import { Text } from 'react-native-paper';
@@ -15,6 +14,7 @@ import Animated, {
   Easing,
 } from 'react-native-reanimated';
 import COLORS from '../constants/colors';
+import { appMarqueeStyles as styles } from '../constants/styles';
 
 const { width: windowWidth } = Dimensions.get('window');
 
@@ -95,23 +95,3 @@ export default function AppMarquee({
   );
 }
 
-const styles = StyleSheet.create({
-  screen: {
-    // flex: 1,
-    justifyContent: 'center',
-  },
-  container: {
-    overflow: 'hidden',
-  },
-  row: {
-    flexDirection: 'row',
-  },
-  text: {
-    width: windowWidth-64,
-    textAlign: 'center',
-    fontSize: 20,
-    color:COLORS.whiteMain,
-    fontWeight:'700',
-    paddingVertical:8
-  },
-});

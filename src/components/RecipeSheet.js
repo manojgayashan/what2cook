@@ -31,6 +31,7 @@ import Ionicons from '@react-native-vector-icons/ionicons'
 import { useNavigation } from '@react-navigation/native'
 import COLORS from '../constants/colors'
 import { useRecipeSheet } from '../context/RecipeSheetContext'
+import { recipeSheetStyles as styles } from '../constants/styles'
 
 const DARK = '#141414'
 
@@ -156,59 +157,3 @@ export default function RecipeSheet() {
   )
 }
 
-const styles = StyleSheet.create({
-  root: {
-    ...StyleSheet.absoluteFillObject,
-    justifyContent: 'flex-end',
-    // pointerEvents="box-none" set on the JSX element above
-  },
-  sheet: {
-    backgroundColor: '#fff',
-    borderTopLeftRadius: 26,
-    borderTopRightRadius: 26,
-    paddingHorizontal: 20,
-    paddingTop: 10,
-    paddingBottom: Platform.OS === 'ios' ? 36 : 24,
-    shadowColor: DARK,
-    shadowOffset: { width: 0, height: -6 },
-    shadowOpacity: 0.09,
-    shadowRadius: 20,
-    elevation: 22,
-  },
-  handle: {
-    width: 36, height: 4, borderRadius: 2,
-    backgroundColor: DARK + '16',
-    alignSelf: 'center',
-    marginBottom: 18,
-  },
-  statusRow: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 14 },
-  statusIcon: { width: 42, height: 42, borderRadius: 21, alignItems: 'center', justifyContent: 'center' },
-  statusIconActive: { backgroundColor: COLORS.primaryMain },
-  statusIconEmpty:  { backgroundColor: DARK + '08' },
-  statusTitle: { fontSize: 15, fontWeight: '700', color: DARK, letterSpacing: -0.1 },
-  statusSub:   { fontSize: 12, color: DARK + '45', marginTop: 2 },
-  clearBtn: { paddingHorizontal: 12, paddingVertical: 7, borderRadius: 10, backgroundColor: DARK + '07' },
-  clearBtnText: { fontSize: 12, fontWeight: '700', color: DARK + '55' },
-
-  chipsOuter: { position: 'relative', marginBottom: 16 },
-  chipsScroll: { gap: 8, paddingVertical: 3, paddingRight: 16 },
-  chip: {
-    flexDirection: 'row', alignItems: 'center', gap: 6,
-    paddingVertical: 7, paddingLeft: 13, paddingRight: 9,
-    borderRadius: 20,
-    backgroundColor: COLORS.primaryMain + '0D',
-    borderWidth: 1.5, borderColor: COLORS.primaryMain + '2E',
-  },
-  chipText: { fontSize: 12, fontWeight: '600', color: COLORS.primaryMain },
-  chipX: { width: 16, height: 16, borderRadius: 8, backgroundColor: COLORS.primaryMain + '1A', alignItems: 'center', justifyContent: 'center' },
-  fadeEdge: { position: 'absolute', top: 0, bottom: 0, width: 40 },
-  fadeLeft:  { left: 0 },
-  fadeRight: { right: 0 },
-
-  ctaBtn: { borderRadius: 16, overflow: 'hidden' },
-  ctaBtnDisabled: { opacity: 0.5 },
-  ctaGradient: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', paddingVertical: 17, paddingHorizontal: 24, gap: 12 },
-  ctaLabel: { fontSize: 15, fontWeight: '700', color: '#fff', letterSpacing: 0.15 },
-  ctaLabelDisabled: { color: DARK + '40' },
-  ctaArrow: { width: 28, height: 28, borderRadius: 14, backgroundColor: 'rgba(255,255,255,0.92)', alignItems: 'center', justifyContent: 'center' },
-})
