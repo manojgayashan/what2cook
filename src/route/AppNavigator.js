@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Button } from '@react-navigation/elements';
 import Home from '../screens/Home'
 import Explore from '../screens/Explore'
 import Favourites from '../screens/Favourites'
 import Settings from '../screens/Settings'
+import Auth from '../screens/Auth'
 import Recipe from '../screens/Recipe'
 import SearchPointer from '../screens/SearchPointer'
 import { Lucide } from "@react-native-vector-icons/lucide";
@@ -42,8 +42,8 @@ function RootStack() {
       <Stack.Screen
         name="HomeTabs"
         component={HomeTabs}
-
       />
+      <Stack.Screen name="Auth" component={Auth} />
       <Stack.Screen name="Recipe" component={Recipe} />
       <Stack.Screen name="SearchPointer" component={SearchPointer} />
     </Stack.Navigator>
